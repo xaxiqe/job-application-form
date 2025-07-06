@@ -1,0 +1,122 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #7b2cbf, #e0aaff);
+}
+html {
+  font-size: 62.5%;
+}
+h2 {
+  display: flex;
+  font-size: 2.4rem;
+  font-family: arial, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#form-header {
+  background-color: beige;
+  max-width: 65rem;
+
+  padding: 2rem;
+  font-family: arial, sans-serif;
+}
+.row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.input-group label {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.input-group input {
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+  border: 0.1rem gray solid;
+}
+
+.button-row {
+  text-align: center;
+}
+.button-row button {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.select-wrapper select {
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+}
+
+.flag-icon {
+  width: 2rem;
+  height: auto;
+}
+.text-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
+.input-group small {
+  display: block;
+  color: red;
+  visibility: hidden;
+  height: 1em;
+  font-size: 1.2rem;
+}
+footer {
+  margin-top: 1rem;
+  color: #000000;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+#robot-check {
+  transform: scale(1.5);
+  margin-right: 0.8rem;
+}
+
+.robot-error {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#robotError {
+  display: block;
+  color: red;
+  visibility: hidden;
+  height: 1em;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#success-message {
+  display: none;
+  color: green;
+  font-weight: bold;
+  font-size: 2.4rem;
+}

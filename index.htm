@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form sample</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+  <form class="form" id="form-header">
+      <h2>Application form</h2>
+      <div class="row">
+        <div class="input-group">
+          <label for="fullname">First Name</label>
+          <input type="text" id="firstname" autocomplete="nope" placeholder="Enter your first name" />
+        </div>
+        <div class="input-group">
+          <label for="username">Last name</label>
+          <input type="text" id="lastname" autocomplete="nope" placeholder="Enter your lastname" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" autocomplete="nope" placeholder="Enter your email adress" />
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone number</label>
+          <input type="text" id="phone" autocomplete="off" placeholder="(123)4567890" />
+          <small id="phoneError" >Please enter a valid 10 digit number.</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-group">
+          <label for="id-card">ID</label>
+          <input type="text" id="id-card" autocomplete="none" placeholder="Enter your ID number" />
+          <small id="idError" >ID should have 12 numbers</small>
+        </div>
+        <div class="input-group">
+          <label for="zip-code">Zip Code</label>
+          <input type="text" id="zip-code" autocomplete="off" placeholder="Enter your Zip code" />
+          <small id="zipError" >Zip code must contain 5 digits only</small>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <label for="language">Preferred Language</label>
+          <div class="select-wrapper">
+            <img
+              src="https://flagcdn.com/w20/al.png"
+              alt="AL flag"
+              class="flag-icon"
+            />
+            <select id="language">
+              <option value="al">Albanian</option>
+              <option value="en"> English </option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-group">
+            <label for="gender">Gender</label>
+            <div class="select-wrapper">
+              <select id="gender">
+                <option>Choose your gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Prefer not to say</option>
+              </select>
+            </div>
+        </div>
+        </div>
+      </div>
+       <label for="robot-check">
+          <input type="checkbox" id="robot-check" ><span class="robot-error">
+            I'm not a robot 
+          </span>
+        </label>
+        <small id="robotError">Please confirm you're not a robot </small>
+      <div class="row">
+        <div class="input-group">
+            <div class="text-area">
+                <label for="cover-letter">Cover Letter</label>
+                <textarea  id="cover-letter" name="cover" rows="5" cols="50"  placeholder="Tell us your story.."></textarea>
+            </div>
+        </div>
+      </div>
+      <div class="button-row">
+        <button type="submit">APPLY NOW</button>
+       
+      </div>
+    </form>
+    <p id="success-message">✅ Application sent succesfully!</p>
+    <footer>
+      <p>Vlonjat Bala</p>
+    </footer>
+  </main>
+    
+    <script src="script.js">
+    </script>
+  </body>
+</html>
