@@ -98,20 +98,19 @@ form.addEventListener("submit", function (e) {
 
   if (!hasPhoneError && !hasIdError && !hasZipError && robotInput.checked) {
     successMessage.style.display = "block";
+    const application = {
+      name: document.getElementById("firstname").value,
+      username: document.getElementById("lastname").value,
+      id: document.getElementById("id-card").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      zipcode: document.getElementById("zip-code").value,
+    };
+    console.log("Send this to hr department:", application);
     form.reset();
   } else {
     successMessage.style.display = "none";
   }
-  const application = {
-    name: document.getElementById("firstname").value,
-    username: document.getElementById("lastname").value,
-    id: document.getElementById("id-card").value,
-    email: document.getElementById("email").value,
-    phone: document.getElementById("phone").value,
-    zipcode: document.getElementById("zip-code").value,
-  };
-
-  console.log("Send this to hr department:", application);
 });
 
 //OLD CODE BEFORE REFACTORING(just for referance)
